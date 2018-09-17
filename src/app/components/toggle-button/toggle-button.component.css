@@ -1,0 +1,32 @@
+
+:host {
+    display: inline-block;
+    width: 34px;
+    height: 14px;
+    background-color: rgba(166,174,183,0.5);
+    border-radius: 17px;
+    position: relative;
+}
+
+
+.knob {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4d5d70;
+    position: absolute;
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    top: -25%;
+    left: 50%;
+}
+
+.knob:hover {
+    cursor: pointer;
+}
+
+.knob.on {
+    top: -25%;
+    left: -10%;
+    background-color: #a4a8ac;
+}

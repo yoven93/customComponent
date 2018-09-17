@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'customComponent';
+
+  toggleButtonState: string;
+  
+  handleToggleButtonClick(toggleButtonStatus) {
+    toggleButtonStatus? this.toggleButtonState = 'ON' : this.toggleButtonState = 'OFF';
+  }
 }
