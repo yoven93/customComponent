@@ -1,0 +1,5 @@
+<div (click)="select()">
+  <p [className]="monthStyle">{{ month }}</p>
+  <p class="year">{{ year }}</p>
+</div>
+<div class="date-bottom-border" *ngIf="isSelected"></div>

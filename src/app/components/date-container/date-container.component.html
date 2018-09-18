@@ -1,0 +1,8 @@
+<app-date
+  class="date"
+  *ngFor="let month of months"
+  [month]="month"
+  [year]="currentYear"
+  [monthSelected]="monthSelected"
+  (selectEvent)="select($event)"
+></app-date>

@@ -1,0 +1,4 @@
+{
+  "Title": "Translation example",
+  "Intro": "My name is {{ name }} and im {{ age }} years old"
+}

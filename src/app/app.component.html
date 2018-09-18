@@ -1,2 +1,30 @@
-<toggle-button class="toggle-button" [on]="false" (onToggle)="handleToggleButtonClick($event)"></toggle-button>
-<span>{{ toggleButtonState }}</span>
+
+<!-- Toggle Button -->
+<h2>Toggle Button</h2>
+<toggle-button class="toggle-button" [on]="toggleButtonStatus" [label]="'Title' | translate" (onToggle)="handleToggleButtonClick($event)"></toggle-button>
+<span (click)="changeMe()">{{ toggleButtonState }}</span>
+
+<br><br><hr><br>
+
+<!-- Date Navigation -->
+<h2>Date Navigation</h2>
+<app-date-container
+ [currentYear]="currentYear"
+ [currentMonth]="currentMonth"
+ (monthSelect)="onMonthSelect($event)"
+></app-date-container>
+
+<br><br><br>
+
+<button (click)="previous()">Previous</button>
+<button (click)="next()">Next</button>
+
+
+<br><br><hr><br>
+
+<!-- ngx translate --->
+<button (click)="switchLanguage('en')">English</button>
+<button (click)="switchLanguage('fr')">French</button>
+
+<h3 translate>Title</h3>
+<p>{{ 'Intro' | translate:user }}</p>

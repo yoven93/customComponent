@@ -15,7 +15,6 @@
     border-radius: 50%;
     background-color: #4d5d70;
     position: absolute;
-    -webkit-transition: all 0.15s linear;
     transition: all 0.15s linear;
     top: -25%;
     left: 50%;

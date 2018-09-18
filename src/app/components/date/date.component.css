@@ -1,0 +1,26 @@
+p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-family: Graphik;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  color: #8396aa;
+}
+
+p.month {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+p.month.selected {
+  color: #33455b;
+}
+
+div.date-bottom-border {
+  margin-top: 13.5px;
+  width: 43px;
+  height: 4px;
+  background-color: #27d7b1;
+  box-shadow: 0 4px 8px 0 rgba(40, 216, 178, 0.5), 0 0 8px 0 rgba(38, 209, 172, 0.25);
+}
